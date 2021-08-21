@@ -42,7 +42,7 @@ const TaskList = ({tasks, title}) => {
     return ( 
         <div className="task-view">
             
-            <p>{count - total}  Unfinished Task Left</p>
+            <p>{count - total}  Unfinished Task</p>
             {tasks.map(({ title, id }, index) => {
           return (
               <div className="task-items">
