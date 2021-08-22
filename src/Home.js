@@ -23,7 +23,7 @@ const Home = () => {
 
     useEffect(() => {
         console.log('Site Running')
-    },[]);
+    },[title]);
     return ( 
         <div className="home">
             <form >
@@ -42,6 +42,7 @@ const Home = () => {
                 value ={title}
                 onChange = {(e) => setTitle(e.target.value)}
             />
+            <p>{title}</p>
             </form>
         </div>
      );
