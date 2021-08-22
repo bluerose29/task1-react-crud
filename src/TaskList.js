@@ -54,7 +54,7 @@ const TaskList = ({ tasks, title, setTasks }) => {
       <p>{count - total} Unfinished Task</p>
       {tasks.map(({ title, id }, index) => {
         return (
-          <div className="task-items">
+          <div className="task-items"  key={index}>
             <div className="checkbox-container">
               <input
                 type="checkbox"
