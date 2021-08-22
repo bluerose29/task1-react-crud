@@ -29,7 +29,7 @@ const Home = () => {
             <form >
             <div className="title">
                 <h2>Todo List</h2>
-                <button onClick={handleSubmit}><img src={addTask}/></button>
+                <button onClick={handleSubmit}><img src={addTask} alt="Add"/></button>
             </div>
             <div className="task-list-display">
                 {error && <div>{ error }</div>}

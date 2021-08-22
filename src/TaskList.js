@@ -55,7 +55,7 @@ const TaskList = ({tasks, title}) => {
                   />
                   <label>{title}</label>
                   </div>
-                  <button onClick={() => deleteTask(id)}><img src={deleteIcon}/></button>
+                  <button onClick={() => deleteTask(id)}><img src={deleteIcon} alt="Delete"/></button>
               </div>
           );
         })}
