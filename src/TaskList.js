@@ -26,11 +26,7 @@ const TaskList = ({ tasks, title, setTasks }) => {
         throw new Error(err);
       });
   }
-<<<<<<< HEAD
-  const [count, setCount] = useState(Object.keys(tasks).length);
-=======
   const [count] = useState(Object.keys(tasks).length);
->>>>>>> 57169dfec12abf4158de5c90a53f73facc8d9956
 
   const [total, setTotal] = useState(0);
 
