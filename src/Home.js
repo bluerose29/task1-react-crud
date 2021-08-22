@@ -66,6 +66,10 @@ const Home = () => {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
+<<<<<<< HEAD
+=======
+        <p>{title}</p>
+>>>>>>> 57169dfec12abf4158de5c90a53f73facc8d9956
       </form>
     </div>
   );
