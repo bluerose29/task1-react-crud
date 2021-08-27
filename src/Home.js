@@ -12,6 +12,13 @@ const Home = () => {
   const [title, setTitle] = useState("");
   const [tasks, setTasks] = useState([]);
 
+  // useEffect(() => {
+  //   fetch('http://localhost:8000/tasks').then(res => {
+  //    return  res.json()
+  //   }).then(res => {
+  //     setTasks(res)
+  //   })
+  // },[])
   useEffect(() => {
     setTasks(tasksFetch);
   }, [tasksFetch]);
@@ -57,7 +64,14 @@ const Home = () => {
         <div className="task-list-display">
           {error && <div>{error}</div>}
           {isPending && <div style={{ margin: "15px" }}>Loading Task...</div>}
-          {tasks && <TaskList setTasks={setTasks} tasks={tasks} />}
+          {tasks && (
+            <TaskList
+              setTasks={setTasks}
+              tasks={tasks}
+              extraProps={1}
+              anotherExtraProp={"lkansdflkansdf"}
+            />
+          )}
         </div>
 
         <input
